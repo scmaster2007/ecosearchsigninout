@@ -1,13 +1,12 @@
 import React from 'react'
-import Signout from '../components/signout/SignoutView'
+import SearchBarView from '../components/search/SearchBarView'
 import { authenticateClient } from '../lib/auth'
 
 const page = async () => {
 
-  await authenticateClient()
-  
+    await authenticateClient()
   return (
-    <Signout />
+    <SearchBarView />
   )
 }
 

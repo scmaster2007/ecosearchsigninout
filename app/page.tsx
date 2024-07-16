@@ -1,19 +1,19 @@
-'use client'
+import React from 'react'
+import HeroView from './components/home/HeroView'
+import TeamView from './components/home/TeamView'
+import WaitlistView from './components/home/WaitlistView'
+import WorksView from './components/home/WorksView'
 
-import React, { useEffect } from 'react'
-import { authenticateClient } from './lib/auth'
-
-const Page = () => {
-
-  useEffect(() => {
-    authenticateClient()
-  }, [])
+const page = async () => {
 
   return (
     <div>
-      homepage
+      <HeroView />
+      <WorksView />
+      <WaitlistView />
+      <TeamView />
     </div>
   )
 }
 
-export default Page
+export default page

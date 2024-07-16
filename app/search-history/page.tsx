@@ -1,13 +1,12 @@
 import React from 'react'
-import Signout from '../components/signout/SignoutView'
+import SearchHistoryView from '../components/search-history/SearchHistoryView'
 import { authenticateClient } from '../lib/auth'
 
 const page = async () => {
 
-  await authenticateClient()
-  
+    await authenticateClient();
   return (
-    <Signout />
+    <SearchHistoryView />
   )
 }
 
